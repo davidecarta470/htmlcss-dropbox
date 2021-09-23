@@ -8,31 +8,45 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 .conteiner{
-  width: 80%;
+  width: 70%;
 }
 .clearfix::after{
- content: "";
- display: table;
- clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 .btn{
+  
   background-color:#0061ff ;
-  padding: 5px 25px;
+  padding: 5px  25px;
   border: 0;
   
 }
+.btn-big{
+  width: 100%;
+}
 .btn a{
- 
   color: white;
   text-decoration: none;
-
 }
-/* .jumbotron{
+html{
+  scroll-behavior: smooth;
+}
+h1{
+  font-size: 60px;
+}
+h2{
+  font-size: 40px;
+}
+h3{
+  font-size: 30px;
+}
+section.first::before{
   content: "";
   display: block;
   height: 80px;
   margin: -80px 0 0;
-} */
+} 
 /* HEADER */
 /* global */
 header{
@@ -56,7 +70,7 @@ header nav ul li a{
 header nav ul li a:hover{
   border-bottom:2px solid gray;
 }
-/* fine global */
+/* ****************************** */
 
 nav.left{
 float: left;
@@ -73,12 +87,10 @@ header nav>a{
 nav.right{
   float:right;
   }
-header button{
-  margin-left: 20px;
-}
+
 /* jumbotron */
 .jumbotron{
-  height: 90vh;
+  height: 100vh;
   background-color:#b4d0e7 ;
   margin-top: 80px;
 }
@@ -90,18 +102,16 @@ header button{
 .jumbotron_conteiner .bottom_left{
   display: inline-block;
   width: 30%;
+  height: 100%;
 }
  h1,.jumbotron_conteiner .bottom_left p{
   margin: 10px 0px 40px 0px;
-}
-h1{
-  font-size: 40px;
 }
 .jumbotron_conteiner .bottom_left p{
   font-size: 14px;
 }
 .jumbotron_conteiner img{
-  width: 70%;
+  width: 55%;
   float: right;
 }
 i{
@@ -110,14 +120,17 @@ i{
 }
 /* MAIN */
 main{
-  margin-top: 150px;
-  height: 800px;
+  margin-top: 200px;
+
 }
 section{
   margin: auto;
 }
-main section.first h2{
-  margin-bottom: 40px;
+section .top-first h2{
+ margin-bottom: 40px;
+}
+section .main-first{
+  margin-top: 40px;
 }
 main section.first p span{
   font-size: 12px;
@@ -125,20 +138,21 @@ main section.first p span{
 }
 .payment{
   float:left;
-  width: 30%;
-  margin-top:20px;
+  width: 30%;  
   border: 1px solid lightgray;
-
 }
+/* gutter */
 .payment.standard{
-  margin: 20px  3% 0px 3%;
+  margin:  0px 5%;
 }
-.payment .top{
+/* *************** */
+/* global top */
+.payment .top,.foot-first .top{
   text-align: center;
   border-bottom: 1px solid lightgray;
-  padding: 10px 0;
+  padding: 20px 0;
 }
-.payment i{
+.payment i,.foot-first i{
   font-size: 16px;
 }
 .payment .body{
@@ -181,8 +195,33 @@ main section.first p span{
   font-weight: 900;
   color: #0061ff;
 }
+/* Foot section first */
 
+.foot-first{
+  margin-top: 40px;
+  border:1px solid lightgray;
+}
 
+.foot-first .main {
+  width: 90%;
+  margin: 20px auto;
 
-/* payment left */
+} 
+.foot-first .main .left,.foot-first .main .right{
+  float: left;
+}
+.foot-first .main .left{
+  width: 60%;
+}
+.foot-first .main .right{
+  width: 40%;
+}
 
+.foot-first .main .left h4{
+  margin: 30px 0px;
+}
+.foot-first .main .left p{
+  font-size: 12px;
+  padding-bottom: 20px;
+
+}
