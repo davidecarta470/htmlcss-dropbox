@@ -17,11 +17,12 @@ body{
 }
 .btn{
   background-color:#0061ff ;
-  padding: 5px 15px;
+  padding: 5px 25px;
   border: 0;
   
 }
 .btn a{
+ 
   color: white;
   text-decoration: none;
 
@@ -81,25 +82,25 @@ header button{
   background-color:#b4d0e7 ;
   margin-top: 80px;
 }
-.jumbotron_container{
+.jumbotron_conteiner{
   width: 90%;
   margin: auto ;
   padding-top: 80px;
 }
-.jumbotron_container .bottom_left{
+.jumbotron_conteiner .bottom_left{
   display: inline-block;
   width: 30%;
 }
- h1,.jumbotron_container .bottom_left p{
+ h1,.jumbotron_conteiner .bottom_left p{
   margin: 10px 0px 40px 0px;
 }
 h1{
   font-size: 40px;
 }
-.jumbotron_container .bottom_left p{
-  font-size: 12px;
+.jumbotron_conteiner .bottom_left p{
+  font-size: 14px;
 }
-.jumbotron_container img{
+.jumbotron_conteiner img{
   width: 70%;
   float: right;
 }
@@ -107,3 +108,81 @@ i{
   font-size: 30px;
   color:black
 }
+/* MAIN */
+main{
+  margin-top: 150px;
+  height: 800px;
+}
+section{
+  margin: auto;
+}
+main section.first h2{
+  margin-bottom: 40px;
+}
+main section.first p span{
+  font-size: 12px;
+  margin-right: 20px;
+}
+.payment{
+  float:left;
+  width: 30%;
+  margin-top:20px;
+  border: 1px solid lightgray;
+
+}
+.payment.standard{
+  margin: 20px  3% 0px 3%;
+}
+.payment .top{
+  text-align: center;
+  border-bottom: 1px solid lightgray;
+  padding: 10px 0;
+}
+.payment i{
+  font-size: 16px;
+}
+.payment .body{
+  width: 80%;
+  margin: 0 auto;
+}
+.payment .body h3{
+  padding: 20px 0px;
+}
+.payment .body>span{
+  font-size: 12px;
+  color: lightgray;
+}
+.payment .body ul{
+  margin:40px 0px;
+  list-style:none;
+}
+.payment .body ul li{
+  font-size: 12px;
+  margin:20px 0px;
+}
+.payment .body ul li i{
+  margin-right: 20px;
+}
+.payment .body .buy-now{
+  height:80px;
+  font-size: 12px;
+  line-height: 80px;
+}
+.payment .body .buy-now span{
+  display: inline-block;
+  height: 100%;
+  border-bottom: 1px solid lightgray;
+}
+.payment .body .buy-now a{
+  color: #0061ff;
+}
+.payment .body ul:last-child li::before{
+  content:"\2713";
+  font-weight: 900;
+  color: #0061ff;
+}
+
+
+
+/* payment left */
+
