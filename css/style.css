@@ -264,3 +264,13 @@ section.second .partner p{
 }
 
 /* Third section */
+section.third{
+  margin: auto;
+}
+.item{
+  float: left;
+  width: calc(100%/3);
+  min-height: 300px;
+  background-color: aqua;
+  border: 1px solid black;
+}
