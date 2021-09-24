@@ -381,6 +381,9 @@ section.fourth .main .center p{
 }
 
 /* fourth section FOOT */
+section.fourth div:last-child{
+background-color:#b4d0e7
+;}
 section.fourth .foot {
   margin: auto;
 }
@@ -396,6 +399,3 @@ section.fourth .foot a{
   float: right;
   border: 1px solid white;
 }
-section.fourth div:last-child{
-background-color:#b4d0e7
-;}
