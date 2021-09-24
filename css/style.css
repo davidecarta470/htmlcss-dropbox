@@ -19,6 +19,7 @@ body{
 html{
   scroll-behavior: smooth;
 }
+
 /* button */
 .btn{
   display: inline-block;
@@ -46,13 +47,13 @@ html{
 
 /* size title */
 h1{
-  font-size: 60px;
+  font-size: 55px;
 }
 h2{
-  font-size: 40px;
+  font-size: 35px;
 }
 h3{
-  font-size: 30px;
+  font-size: 25px;
 }
 h4{
   font-size: 20px;
@@ -92,6 +93,7 @@ header nav ul li a{
 header nav ul li a:hover{
   border-bottom:2px solid gray;
 }
+
 /* ****************************** */
 nav{
   margin: 0px 20px;
@@ -107,7 +109,9 @@ float: left;
 }
 nav.right{
   float:right;
-  }
+}
+
+
 
 /* JUMBOTRON */
 .jumbotron{
@@ -132,18 +136,22 @@ nav.right{
   font-size: 14px;
 }
 .jumbotron_conteiner img{
-  width: 55%;
+  width: 60%;
   float: right;
 }
 i{
   font-size: 30px;
   color:black
 }
+
+
+
+
 /* MAIN */
 main{
   margin-top: 200px;
-
 }
+
 /* SECTION FIRST */
 section.first{
   margin: auto;
@@ -162,10 +170,12 @@ main section.first p span{
   width: 30%;  
   border: 1px solid lightgray;
 }
+
 /*main gutter */
 .payment.standard{
   margin:  0px 5%;
 }
+
 /* ***************** */
 .payment .top,.foot-first .top{
   text-align: center;
@@ -199,6 +209,7 @@ main section.first p span{
   height:80px;
   line-height: 80px;
 }
+
 /*  line under "OPPURE" */
 .payment .body .buy-now span{
   display: inline-block;
@@ -214,8 +225,8 @@ main section.first p span{
   font-weight: 900;
   color: #0061ff;
 }
-/* Foot section first */
 
+/* Foot section first */
 .foot-first{
   margin-top: 40px;
   border:1px solid lightgray;
@@ -224,8 +235,8 @@ main section.first p span{
 .foot-first .main {
   width: 90%;
   margin: 20px auto;
-
 } 
+
 /* floating elements */
 .foot-first .main .left,.foot-first .main .right{
   float: left;
@@ -243,7 +254,6 @@ main section.first p span{
 .foot-first .main .left p{
   padding-bottom: 20px;
 }
-
 
 /* Second section */
 section.second{
@@ -280,7 +290,7 @@ section.third .item h4{
   margin: 20px 0;
 }
   
-/* fourth section */
+/* Fourth section TOP*/
 section.fourth{
   margin:80px 0px;
 }
@@ -296,40 +306,96 @@ section.fourth .top h3{
 section.fourth .top a{
  color:#0061ff ;
 }
-/* fourt section main */
+
+/* fourt section MAIN */
 section.fourth .main{
-  position:relative;
-  margin: 80px 0px; 
+  background-color:#f5f5f5;
+  margin-top:80px; 
+  width: 100vw;
 }
 section.fourth .main .aside,
 section.fourth .main .center{
-  position:absolute;
- 
+ float: left;
 }
+
+/* main aside */
 section.fourth .main .aside{
   width:30%;
-  border: 1px solid black;
 }
 section.fourth .main .center{
   width: 40%;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 1px solid black;
 }
-section.fourth .main .aside.right{
-  right:0%
-}
-.square{
-  float: left;
+section.fourth .main .square{
+  display:inline-block;
   width: 50%;
-  
-  border: 1px solid black;
-  text-align:center;
+  height: 15vw;
+  text-align: center;
+  line-height: 15vw;
+}
+section.fourth .main img{
+  vertical-align: middle;
+  width: 10vw;
+}
+
+/* backgroun color square */
+
+/* aside LEFT container-square a */
+section.fourth .main .left .square-conteiner-above .square:first-child{
+  background-color:#a2d39b;
 
 }
-section.fourth .main  img{
-  width: 100px;
-  margin:50% 0%;
-  }
+section.fourth .main .left .square-conteiner-above .square:last-child{
+  background-color:#61082c;
+}
+/* aside LEFT container-square b */
+section.fourth .main .left .square-conteiner-below .square:first-child{
+  background-color:#1d93ce;
+}
+section.fourth .main .left .square-conteiner-below .square:last-child{
+  background-color:#f91c1d;
+}
+/* aside RIGHT container-square c */
+section.fourth .main .right .square-conteiner-above .square:first-child{
+  background-color:#d5021f;
+}
+section.fourth .main .right .square-conteiner-above .square:last-child{
+  background-color:#b4d0e7;
+}
+/* aside RIGHT container-square d */
+section.fourth .main .right .square-conteiner-below .square:first-child{
+  background-color:#0d2481;
+}
+section.fourth .main .right .square-conteiner-below .square:last-child{
+  background-color:#fed830;
+}
 
 
+/*main center*/
+section.fourth .main .center{
+  height: 30vh;
+  background-color:#f5f5f5;
+  padding: 40px;
+}
+section.fourth .main .center p{
+  padding: 40px 0%;
+}
+
+/* fourth section FOOT */
+section.fourth .foot {
+  margin: auto;
+}
+section.fourth .foot h3 ,section.fourth .foot a{
+  width: 40%;
+  margin: 80px 0px;
+}
+section.fourth .foot h3{
+  float: left;
+  color:#61082c;
+}
+section.fourth .foot a{
+  float: right;
+  border: 1px solid white;
+}
+section.fourth div:last-child{
+background-color:#b4d0e7
+;}
