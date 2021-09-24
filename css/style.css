@@ -6,6 +6,7 @@
 }
 body{
   font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
 }
 .conteiner{
   width: 70%;
@@ -15,23 +16,34 @@ body{
   display: table;
   clear: both;
 }
-.btn{
-  
-  background-color:#0061ff ;
-  padding: 5px  25px;
-  border: 0;
-  
-}
-.btn-big{
-  width: 100%;
-}
-.btn a{
-  color: white;
-  text-decoration: none;
-}
 html{
   scroll-behavior: smooth;
 }
+/* button */
+.btn{
+  display: inline-block;
+  padding: 5px  20px;
+  text-align: center;
+  text-decoration: none;
+}
+.btn-blue{
+  color: white;
+  background-color:#0061ff ;
+  border: 1px solid #0061ff;
+} 
+.btn-white{
+  color: rgb(0, 0, 0);
+  background-color:#ffffff ;
+  border: 1px solid black;
+}  
+.btn-big{
+  width: 100%;
+}
+.btn-blue:hover{
+  background-color:#3c86ff ;
+}
+
+/* size title */
 h1{
   font-size: 60px;
 }
@@ -41,12 +53,20 @@ h2{
 h3{
   font-size: 30px;
 }
+h4{
+  font-size: 20px;
+}
+/* Fixed sistem */
 section.first::before{
   content: "";
   display: block;
   height: 80px;
   margin: -80px 0 0;
 } 
+
+
+
+
 /* HEADER */
 /* global */
 header{
@@ -57,7 +77,7 @@ header{
   z-index: 999;
   background-color: white;
 }
-header nav ul,header nav ul li,header nav ul li a,header nav>a{
+header nav ul,header nav ul li,header nav ul li a,header nav>a,#inizia {
   display: inline-block;
 }
 header nav ul li a{
@@ -68,7 +88,7 @@ header nav ul li a{
   color: black;
 }
 header nav ul li a:hover{
-  border-bottom:2px solid gray;
+  border-bottom:1px solid gray;
 }
 /* ****************************** */
 
@@ -76,7 +96,7 @@ nav.left{
 float: left;
 }
 .logo{
-  display: inline-block;
+  display:inline-block block;
   vertical-align: middle;
   width: 120px;
   margin-right: 20px;
@@ -88,7 +108,7 @@ nav.right{
   float:right;
   }
 
-/* jumbotron */
+/* JUMBOTRON */
 .jumbotron{
   height: 100vh;
   background-color:#b4d0e7 ;
@@ -123,17 +143,17 @@ main{
   margin-top: 200px;
 
 }
-section{
+/* SECTION FIRST */
+section.first{
   margin: auto;
 }
-section .top-first h2{
+section.first .top-first h2{
  margin-bottom: 40px;
 }
-section .main-first{
+section.first .main-first{
   margin-top: 40px;
 }
 main section.first p span{
-  font-size: 12px;
   margin-right: 20px;
 }
 .payment{
@@ -141,12 +161,11 @@ main section.first p span{
   width: 30%;  
   border: 1px solid lightgray;
 }
-/* gutter */
+/*main gutter */
 .payment.standard{
   margin:  0px 5%;
 }
-/* *************** */
-/* global top */
+/* ***************** */
 .payment .top,.foot-first .top{
   text-align: center;
   border-bottom: 1px solid lightgray;
@@ -163,7 +182,6 @@ main section.first p span{
   padding: 20px 0px;
 }
 .payment .body>span{
-  font-size: 12px;
   color: lightgray;
 }
 .payment .body ul{
@@ -171,7 +189,6 @@ main section.first p span{
   list-style:none;
 }
 .payment .body ul li{
-  font-size: 12px;
   margin:20px 0px;
 }
 .payment .body ul li i{
@@ -179,9 +196,9 @@ main section.first p span{
 }
 .payment .body .buy-now{
   height:80px;
-  font-size: 12px;
   line-height: 80px;
 }
+/*  line under "OPPURE" */
 .payment .body .buy-now span{
   display: inline-block;
   height: 100%;
@@ -190,6 +207,7 @@ main section.first p span{
 .payment .body .buy-now a{
   color: #0061ff;
 }
+/* check list */
 .payment .body ul:last-child li::before{
   content:"\2713";
   font-weight: 900;
@@ -207,6 +225,7 @@ main section.first p span{
   margin: 20px auto;
 
 } 
+/* floating elements */
 .foot-first .main .left,.foot-first .main .right{
   float: left;
 }
@@ -216,12 +235,32 @@ main section.first p span{
 .foot-first .main .right{
   width: 40%;
 }
-
+/* ****************** */
 .foot-first .main .left h4{
   margin: 30px 0px;
 }
 .foot-first .main .left p{
-  font-size: 12px;
   padding-bottom: 20px;
-
 }
+
+
+/* Second section */
+section.second{
+  margin:80px auto;
+}
+section.second img{
+  float:left;
+  width: 55%;
+}
+section.second .partner{
+  float: right;
+  width: 40%;
+}
+section.second .partner h4,section.second .partner p{
+  margin: 40px 0px;
+}
+section.second .partner p{
+  line-height: 25px;
+}
+
+/* Third section */
