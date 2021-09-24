@@ -41,6 +41,7 @@ html{
 }
 .btn-blue:hover{
   background-color:#3c86ff ;
+  border: 1px solid #3c86ff;
 }
 
 /* size title */
@@ -71,6 +72,7 @@ section.first::before{
 /* global */
 header{
   width: 100%;
+  height: 80px;
   position: fixed;
   top:0;
   left:0;
@@ -83,26 +85,25 @@ header nav ul,header nav ul li,header nav ul li a,header nav>a,#inizia {
 header nav ul li a{
   font-size: 14px;
   text-decoration: none;
-  line-height: 80px;
+  line-height: 78px;
   margin: 0 20px;
   color: black;
 }
 header nav ul li a:hover{
-  border-bottom:1px solid gray;
+  border-bottom:2px solid gray;
 }
 /* ****************************** */
-
+nav{
+  margin: 0px 20px;
+}
 nav.left{
 float: left;
 }
 .logo{
-  display:inline-block block;
+  width: 140px;
+  padding-bottom: 10px;
+  line-height: 78px;
   vertical-align: middle;
-  width: 120px;
-  margin-right: 20px;
-}
-header nav>a{
-  line-height: 80px;
 }
 nav.right{
   float:right;
@@ -270,7 +271,7 @@ section.third{
 section.third .item{
   float: left;
   width: calc(100%/3);
-  padding: 30px;
+  padding: 30px 30px 30px 0px;
 }
 section.third .item img{
   width: 100%;
@@ -279,3 +280,56 @@ section.third .item h4{
   margin: 20px 0;
 }
   
+/* fourth section */
+section.fourth{
+  margin:80px 0px;
+}
+section.fourth .top{
+  margin:auto;
+}
+section.fourth .top h3,section.fourth .top a{
+  margin: 40px 0;
+}
+section.fourth .top h3{
+  width: 60%;
+}
+section.fourth .top a{
+ color:#0061ff ;
+}
+/* fourt section main */
+section.fourth .main{
+  position:relative;
+  margin: 80px 0px; 
+}
+section.fourth .main .aside,
+section.fourth .main .center{
+  position:absolute;
+ 
+}
+section.fourth .main .aside{
+  width:30%;
+  border: 1px solid black;
+}
+section.fourth .main .center{
+  width: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid black;
+}
+section.fourth .main .aside.right{
+  right:0%
+}
+.square{
+  float: left;
+  width: 50%;
+  
+  border: 1px solid black;
+  text-align:center;
+
+}
+section.fourth .main  img{
+  width: 100px;
+  margin:50% 0%;
+  }
+
+
