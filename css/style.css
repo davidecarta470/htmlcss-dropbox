@@ -267,10 +267,15 @@ section.second .partner p{
 section.third{
   margin: auto;
 }
-.item{
+section.third .item{
   float: left;
   width: calc(100%/3);
-  min-height: 300px;
-  background-color: aqua;
-  border: 1px solid black;
+  padding: 30px;
 }
+section.third .item img{
+  width: 100%;
+}
+section.third .item h4{
+  margin: 20px 0;
+}
+  
