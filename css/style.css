@@ -6,10 +6,10 @@
 }
 body{
   font-family: 'Open Sans', sans-serif;
-  font-size: 0.8vw;
+  font-size: 12px;
 }
 .conteiner{
-  width: 60vw;
+  width: 60%;
   margin: 80px auto;
 }
 .clearfix::after{
@@ -52,19 +52,19 @@ html{
 
 /* size title */
 h1{
-  font-size: 4vw;
+  font-size: 40px;
 }
 h2{
-  font-size: 2.5vw;
+  font-size: 30px;
 }
 h3{
-  font-size: 2vw;
+  font-size: 25px;
 }
 h4{
-  font-size: 1.5vw;
+  font-size: 20px;
 }
 h5{
-  font-size: 1.0vw;
+  font-size: 18px;
 }
 
 
@@ -94,7 +94,7 @@ header nav.left a{
 }
 header nav ul li a{
   text-decoration: none;
-  margin: 0 1.5vw;
+  margin: 0 30px;
   color: black;
   line-height: 76px;
 }
@@ -112,7 +112,7 @@ header nav ul li.dropdown{
   position: absolute;
   top: 78px;
   background-color: #f1f1f1;
-  min-width: 30vw;
+  min-width: 300px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
 }
 .dropdown-content a{
@@ -152,13 +152,12 @@ nav.right{
 
 /* JUMBOTRON */
 .jumbotron{
-  width: 100vw;
-  height: 100vh;
+  height: 90vh;
   background-color:#b4d0e7 ;
   padding-top: 160px;
 }
 .jumbotron_frame{
-  width: 75vw;
+  width: 80%;
   margin: auto;
 }
 .jumbotron_frame .bottom_left{
@@ -172,7 +171,7 @@ h1,.jumbotron_frame .bottom_left p{
   margin-top: 10px;
 }
 .jumbotron_frame img{
-  width: 50vw;
+  width: 60%;
   float: right;
   background-color: #b4d0e7;
   border: 1px solid #050505;
@@ -180,7 +179,7 @@ h1,.jumbotron_frame .bottom_left p{
   border-radius: 25px;
 }
 i{
-  font-size: 2vw;
+  font-size: 20px;
   color:black
 }
 
@@ -189,7 +188,7 @@ i{
 
 /* MAIN */
 main{
-  margin-top: 30vh;
+  margin-top: 120px;
 }
 
 /* SECTION FIRST */
@@ -259,7 +258,6 @@ main section.first p span{
 /*  line under "OPPURE" */
 .payment .body .buy-now span{
   display: inline-block;
-  height: 100%;
   border-bottom: 1px solid lightgray;
 }
 .payment .body .buy-now a{
@@ -332,9 +330,7 @@ section.third .item h4{
 }
   
 /* Fourth section TOP*/
-section.fourth{
-  width: 100vw;
-}
+
 section.fourth .top h3{
   margin-bottom: 40px;
   width: 60%;
@@ -363,11 +359,11 @@ section.fourth .main .square{
   display:inline-block;
   width: 50%;
   text-align: center;
-  line-height: 15vw;
+  line-height: 200px;
 }
 section.fourth .main img{
   vertical-align: middle;
-  width: 10vw;
+  width: 40%;
 }
 section.fourth .main .aside img{
   filter: invert(1);
@@ -406,20 +402,19 @@ section.fourth .main .right .square-conteiner-below .square:last-child{
 /* frame square first square */
  .square-conteiner-above  .frame-square{
   width: 100%;
-  height: 15vw;
+  height: 200px;
   border: 10px solid #d1e9cd;
   position: absolute;
   left: 0%;
   top: 0%;
 }
 
-/*main center*/
+/*center main  */
 section.fourth .main .center{
-  padding: 5vw;
+  padding: 80px;
 }
 
 section.fourth .main .center p{
-  font-size: 1vw;
   padding: 15% 0%;
 }
 
@@ -446,16 +441,15 @@ section.fourth .foot a{
 
 /* Fifth section */
 section.fifth .conteiner ul h3{
-  padding-bottom:4vh ;
-  font-size: 1.8vw;
+  padding-bottom:40px ;
   border-bottom:2px solid lightgrey;
 }
 section.fifth .conteiner ul {
   list-style: none;
 }
 section.fifth .conteiner ul li{
-  padding: 4vh 0vh;
-  font-size: 1.2vw;
+  padding: 30px 0;
+  font-size: 16px;
   border-bottom:2px solid lightgrey;
 }
 section.fifth .conteiner ul li span,.answers{
@@ -463,12 +457,12 @@ section.fifth .conteiner ul li span,.answers{
   float:left;
 }
 section.fifth .conteiner ul li i{
-  width: 20px;
   font-size: 16px;
   float: right;
   padding-right: 20px;
   
 }
+/* Dropdown Answer  */
 .answers{
   padding-top:20px;
   color: #9e9e9e;
@@ -478,6 +472,15 @@ section.fifth .conteiner ul li i{
 }
 section.fifth .conteiner ul li:hover .answers{
   display: block;
+}
+#angle-up{
+  display: none;
+}
+section.fifth .conteiner ul li:hover #angle-up{
+  display: block;
+}
+section.fifth .conteiner ul li:hover #angle-down{
+  display: none;
 }
 
 /* FOOTER */
@@ -492,7 +495,7 @@ footer .frame{
 footer .frame ul{
   display: inline-block;
   list-style: none;
-  margin: 6vw 7vw 6vw 0;
+  margin: 50px 80px 50px  0;
 }
 footer .frame ul h5{
   display: inline-block;
