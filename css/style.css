@@ -8,6 +8,22 @@ body{
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
 }
+/* size title */
+h1{
+  font-size: 40px;
+}
+h2{
+  font-size: 30px;
+}
+h3{
+  font-size: 25px;
+}
+h4{
+  font-size: 20px;
+}
+h5{
+  font-size: 18px;
+}
 .conteiner{
   width: 60%;
   margin: 80px auto;
@@ -50,22 +66,6 @@ html{
 }
 
 
-/* size title */
-h1{
-  font-size: 40px;
-}
-h2{
-  font-size: 30px;
-}
-h3{
-  font-size: 25px;
-}
-h4{
-  font-size: 20px;
-}
-h5{
-  font-size: 18px;
-}
 
 
 
@@ -88,12 +88,24 @@ header nav ul li,
   cursor: pointer;
 }
 
-/* riferito solo al link contenente il logo */
-header nav.left a{
+nav{
+  margin: 2px 15px;
+}
+nav.left{
+  float: left;
+}
+nav.right{
+  float:right;
+}
+.logo{
+  width: 80px;
+  padding-bottom: 4px;
+  vertical-align: middle;
+}
+header nav.left a,header nav ul li a{
   text-decoration: none;
 }
 header nav ul li a{
-  text-decoration: none;
   margin: 0 30px;
   color: black;
   line-height: 76px;
@@ -102,7 +114,7 @@ header nav ul li a{
 header nav ul li:hover{
   border-bottom:2px solid gray;
 }
-/* Menu' a tendina */
+/* dropdown menu */
 header nav ul li.dropdown{
   position: relative;
   display: inline-block;
@@ -133,20 +145,6 @@ header nav ul li.dropdown{
 
 
 /* ****************************** */
-nav{
-  margin: 2px 15px;
-}
-nav.left{
-  float: left;
-}
-.logo{
-  width: 80px;
-  padding-bottom: 4px;
-  vertical-align: middle;
-}
-nav.right{
-  float:right;
-}
 
 
 
@@ -156,6 +154,7 @@ nav.right{
   background-color:#b4d0e7 ;
   padding-top: 160px;
 }
+
 .jumbotron_frame{
   width: 80%;
   margin: auto;
@@ -170,6 +169,10 @@ h1,.jumbotron_frame .bottom_left p{
 .jumbotron_frame .bottom_left p:last-of-type{
   margin-top: 10px;
 }
+.jumbotron_frame i{
+  font-size: 20px;
+  color:black
+}
 .jumbotron_frame img{
   width: 60%;
   float: right;
@@ -177,10 +180,6 @@ h1,.jumbotron_frame .bottom_left p{
   border: 1px solid #050505;
   box-shadow: 4px 5px 5px rgba(0,0,0,0.5);
   border-radius: 25px;
-}
-i{
-  font-size: 20px;
-  color:black
 }
 
 
@@ -209,6 +208,7 @@ section.first .main-first{
 main section.first p span{
   margin-right: 20px;
 }
+/* all col have class payment */
 .payment{
   float:left;
   width: 30%;  
@@ -220,7 +220,8 @@ main section.first p span{
   margin:  0px 5%;
 }
 
-/* ***************** */
+
+/* features columns item */
 .payment .top,.foot-first .top{
   text-align: center;
   border-bottom: 1px solid lightgray;
@@ -229,53 +230,54 @@ main section.first p span{
 .payment i,.foot-first i{
   font-size: 16px;
 }
-.payment .body{
+
+/* features inside body-frame */
+.payment .body-frame{
   width: 80%;
   margin: 0 auto;
 }
-.payment .body h3{
+.payment .body-frame h3{
   padding: 20px 0px;
 }
-.payment .body>span{
+.payment .body-frame>span{
   color: lightgray;
 }
-.payment .body ul{
+.payment .body-frame ul{
   margin:40px 0px;
   list-style: none;
 }
-.payment .body ul li{
+.payment .body-frame ul li{
   margin:20px 0px;
 }
-.payment .body .buy-now{
-  height:80px;
-  line-height: 80px;
-}
-.payment .body ul li span{
+.payment .body-frame ul li span{
   float: right;
   width: 90%;
 }
-
+.payment .body-frame .buy-now{
+  height:80px;
+  line-height: 80px;
+}
 /*  line under "OPPURE" */
-.payment .body .buy-now span{
+.payment .body-frame .buy-now span{
   display: inline-block;
   border-bottom: 1px solid lightgray;
 }
-.payment .body .buy-now a{
+.payment .body-frame .buy-now a{
   color: #0061ff;
 }
 /* check list */
-.payment .body ul:last-child li::before{
+.payment .body-frame ul:last-child li::before{
   content:"\2713";
   font-weight: 900;
   color: #0061ff;
 }
+
 
 /* Foot section first */
 .foot-first{
   margin-top: 40px;
   border:1px solid lightgray;
 }
-
 .foot-first .main {
   width: 90%;
   margin: 20px auto;
@@ -299,7 +301,7 @@ main section.first p span{
   padding-bottom: 20px;
 }
 
-/* Second section */
+/* SECTION SECOND */
 section.second img{
   float:left;
   width: 55%;
@@ -315,7 +317,7 @@ section.second .partner p{
   line-height: 25px;
 }
 
-/* Third section */
+/* THIRD SECTION */
 
 section.third .item{
   float: left;
@@ -328,7 +330,9 @@ section.third .item img{
 section.third .item h4{
   margin: 20px 0;
 }
-  
+ 
+/* FOURTH SECTION */
+
 /* Fourth section TOP*/
 
 section.fourth .top h3{
@@ -347,8 +351,7 @@ section.fourth .main .aside,
 section.fourth .main .center{
  float: left;
 }
-
-/* main aside */
+/*dimensions aside, center,square*/
 section.fourth .main .aside{
   width:30%;
 }
@@ -361,16 +364,17 @@ section.fourth .main .square{
   text-align: center;
   line-height: 200px;
 }
+section.fourth .main .aside img{
+  filter: invert(1);
+}
 section.fourth .main img{
   vertical-align: middle;
   width: 40%;
 }
-section.fourth .main .aside img{
-  filter: invert(1);
-}
+
 /* backgroun color square */
 
-/* aside LEFT container-square a */
+/* aside LEFT container-square*/
 section.fourth .main .left .square-conteiner-above .square:first-child{
   background-color:#a2d39b;
   position: relative;
@@ -378,28 +382,28 @@ section.fourth .main .left .square-conteiner-above .square:first-child{
 section.fourth .main .left .square-conteiner-above .square:last-child{
   background-color:#61082c;
 }
-/* aside LEFT container-square b */
+/* aside LEFT container-square*/
 section.fourth .main .left .square-conteiner-below .square:first-child{
   background-color:#1d93ce;
 }
 section.fourth .main .left .square-conteiner-below .square:last-child{
   background-color:#f91c1d;
 }
-/* aside RIGHT container-square c */
+/* aside RIGHT container-square*/
 section.fourth .main .right .square-conteiner-above .square:first-child{
   background-color:#d5021f;
 }
 section.fourth .main .right .square-conteiner-above .square:last-child{
   background-color:#b4d0e7;
 }
-/* aside RIGHT container-square d */
+/* aside RIGHT container-square*/
 section.fourth .main .right .square-conteiner-below .square:first-child{
   background-color:#0d2481;
 }
 section.fourth .main .right .square-conteiner-below .square:last-child{
   background-color:#fed830;
 }
-/* frame square first square */
+/* frame square in first small square */
  .square-conteiner-above  .frame-square{
   width: 100%;
   height: 200px;
@@ -418,49 +422,49 @@ section.fourth .main .center p{
   padding: 15% 0%;
 }
 
-/* fourth section FOOT */
+/* fourth section bottom */
 section.fourth div:last-child{
 background-color:#b4d0e7;
 }
-section.fourth .foot {
-  width:60%;
-  margin: auto;
+section.fourth .bottom-frame {
+  margin: 0 auto;
+  width: 60%;
 }
-section.fourth .foot h3 ,section.fourth .foot a{
+section.fourth .bottom-frame h3 ,section.fourth .bottom-frame a{
   width: 40%;
   margin: 80px 0px;
 }
-section.fourth .foot h3{
+section.fourth .bottom-frame h3{
   float: left;
   color:#61082c;
 }
-section.fourth .foot a{
+section.fourth .bottom-frame a{
   float: right;
   border: 1px solid white;
 }
 
-/* Fifth section */
+
+/* FIFTH SECTION */
+section.fifth .conteiner ul {
+  list-style: none;
+}
 section.fifth .conteiner ul h3{
   padding-bottom:40px ;
   border-bottom:2px solid lightgrey;
-}
-section.fifth .conteiner ul {
-  list-style: none;
 }
 section.fifth .conteiner ul li{
   padding: 30px 0;
   font-size: 16px;
   border-bottom:2px solid lightgrey;
 }
-section.fifth .conteiner ul li span,.answers{
-  width: 80%;
-  float:left;
-}
 section.fifth .conteiner ul li i{
   font-size: 16px;
   float: right;
   padding-right: 20px;
-  
+}
+section.fifth .conteiner ul li span,.answers{
+  width: 80%;
+  float:left;
 }
 /* Dropdown Answer  */
 .answers{
@@ -482,6 +486,7 @@ section.fifth .conteiner ul li:hover #angle-up{
 section.fifth .conteiner ul li:hover #angle-down{
   display: none;
 }
+
 
 /* FOOTER */
 footer{
