@@ -6,10 +6,11 @@
 }
 body{
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: 0.8vw;
 }
 .conteiner{
-  width: 70%;
+  width: 60vw;
+  margin: 80px auto;
 }
 .clearfix::after{
   content: "";
@@ -44,27 +45,27 @@ html{
   background-color:#3c86ff ;
   border: 1px solid #3c86ff;
 }
+.btn-white:hover{
+  background-color:#f4f5f5;
+}
+
 
 /* size title */
 h1{
-  font-size: 55px;
+  font-size: 4vw;
 }
 h2{
-  font-size: 35px;
+  font-size: 2.5vw;
 }
 h3{
-  font-size: 25px;
+  font-size: 2vw;
 }
 h4{
-  font-size: 20px;
+  font-size: 1.5vw;
 }
-/* Fixed sistem */
-section.first::before{
-  content: "";
-  display: block;
-  height: 80px;
-  margin: -80px 0 0;
-} 
+h5{
+  font-size: 1.0vw;
+}
 
 
 
@@ -80,31 +81,67 @@ header{
   z-index: 999;
   background-color: white;
 }
-header nav ul,header nav ul li,header nav ul li a,header nav>a,#inizia {
+header nav ul,
+header nav ul li,
+#inizia {
   display: inline-block;
+  cursor: pointer;
+}
+
+/* riferito solo al link contenente il logo */
+header nav.left a{
+  text-decoration: none;
 }
 header nav ul li a{
-  font-size: 14px;
   text-decoration: none;
-  line-height: 78px;
-  margin: 0 20px;
+  margin: 0 1.5vw;
   color: black;
+  line-height: 76px;
 }
-header nav ul li a:hover{
+
+header nav ul li:hover{
   border-bottom:2px solid gray;
 }
+/* Menu' a tendina */
+header nav ul li.dropdown{
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 78px;
+  background-color: #f1f1f1;
+  min-width: 30vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+.dropdown-content a{
+  display: block;
+  color: black;
+  margin: 0;
+  padding: 0px 20px;
+  text-decoration: none;
+  line-height: 50px;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
 /* ****************************** */
 nav{
-  margin: 0px 20px;
+  margin: 2px 15px;
 }
 nav.left{
-float: left;
+  float: left;
 }
 .logo{
-  width: 140px;
-  padding-bottom: 10px;
-  line-height: 78px;
+  width: 80px;
+  padding-bottom: 4px;
   vertical-align: middle;
 }
 nav.right{
@@ -115,32 +152,35 @@ nav.right{
 
 /* JUMBOTRON */
 .jumbotron{
+  width: 100vw;
   height: 100vh;
   background-color:#b4d0e7 ;
-  margin-top: 80px;
+  padding-top: 160px;
 }
-.jumbotron_conteiner{
-  width: 90%;
-  margin: auto ;
-  padding-top: 80px;
+.jumbotron_frame{
+  width: 75vw;
+  margin: auto;
 }
-.jumbotron_conteiner .bottom_left{
+.jumbotron_frame .bottom_left{
   display: inline-block;
   width: 30%;
-  height: 100%;
 }
- h1,.jumbotron_conteiner .bottom_left p{
-  margin: 10px 0px 40px 0px;
+h1,.jumbotron_frame .bottom_left p{
+  margin-bottom: 40px;
 }
-.jumbotron_conteiner .bottom_left p{
-  font-size: 14px;
+.jumbotron_frame .bottom_left p:last-of-type{
+  margin-top: 10px;
 }
-.jumbotron_conteiner img{
-  width: 60%;
+.jumbotron_frame img{
+  width: 50vw;
   float: right;
+  background-color: #b4d0e7;
+  border: 1px solid #050505;
+  box-shadow: 4px 5px 5px rgba(0,0,0,0.5);
+  border-radius: 25px;
 }
 i{
-  font-size: 30px;
+  font-size: 2vw;
   color:black
 }
 
@@ -149,15 +189,20 @@ i{
 
 /* MAIN */
 main{
-  margin-top: 200px;
+  margin-top: 30vh;
 }
 
 /* SECTION FIRST */
-section.first{
-  margin: auto;
-}
+
+/* Fixed sistem */
+section.first::before{
+  content: "";
+  display: block;
+  height: 80px;
+  margin: -80px 0 0;
+} 
 section.first .top-first h2{
- margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 section.first .main-first{
   margin-top: 40px;
@@ -197,17 +242,18 @@ main section.first p span{
 }
 .payment .body ul{
   margin:40px 0px;
-  list-style:none;
+  list-style: none;
 }
 .payment .body ul li{
   margin:20px 0px;
 }
-.payment .body ul li i{
-  margin-right: 20px;
-}
 .payment .body .buy-now{
   height:80px;
   line-height: 80px;
+}
+.payment .body ul li span{
+  float: right;
+  width: 90%;
 }
 
 /*  line under "OPPURE" */
@@ -256,9 +302,6 @@ main section.first p span{
 }
 
 /* Second section */
-section.second{
-  margin:80px auto;
-}
 section.second img{
   float:left;
   width: 55%;
@@ -275,9 +318,7 @@ section.second .partner p{
 }
 
 /* Third section */
-section.third{
-  margin: auto;
-}
+
 section.third .item{
   float: left;
   width: calc(100%/3);
@@ -292,26 +333,19 @@ section.third .item h4{
   
 /* Fourth section TOP*/
 section.fourth{
-  margin:80px 0px;
-}
-section.fourth .top{
-  margin:auto;
-}
-section.fourth .top h3,section.fourth .top a{
-  margin: 40px 0;
+  width: 100vw;
 }
 section.fourth .top h3{
+  margin-bottom: 40px;
   width: 60%;
 }
 section.fourth .top a{
  color:#0061ff ;
 }
 
-/* fourt section MAIN */
+/* fourth section MAIN */
 section.fourth .main{
   background-color:#f5f5f5;
-  margin-top:80px; 
-  width: 100vw;
 }
 section.fourth .main .aside,
 section.fourth .main .center{
@@ -328,7 +362,6 @@ section.fourth .main .center{
 section.fourth .main .square{
   display:inline-block;
   width: 50%;
-  height: 15vw;
   text-align: center;
   line-height: 15vw;
 }
@@ -336,13 +369,15 @@ section.fourth .main img{
   vertical-align: middle;
   width: 10vw;
 }
-
+section.fourth .main .aside img{
+  filter: invert(1);
+}
 /* backgroun color square */
 
 /* aside LEFT container-square a */
 section.fourth .main .left .square-conteiner-above .square:first-child{
   background-color:#a2d39b;
-
+  position: relative;
 }
 section.fourth .main .left .square-conteiner-above .square:last-child{
   background-color:#61082c;
@@ -368,23 +403,32 @@ section.fourth .main .right .square-conteiner-below .square:first-child{
 section.fourth .main .right .square-conteiner-below .square:last-child{
   background-color:#fed830;
 }
-
+/* frame square first square */
+ .square-conteiner-above  .frame-square{
+  width: 100%;
+  height: 15vw;
+  border: 10px solid #d1e9cd;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+}
 
 /*main center*/
 section.fourth .main .center{
-  height: 30vh;
-  background-color:#f5f5f5;
-  padding: 40px;
+  padding: 5vw;
 }
+
 section.fourth .main .center p{
-  padding: 40px 0%;
+  font-size: 1vw;
+  padding: 15% 0%;
 }
 
 /* fourth section FOOT */
 section.fourth div:last-child{
-background-color:#b4d0e7
-;}
+background-color:#b4d0e7;
+}
 section.fourth .foot {
+  width:60%;
   margin: auto;
 }
 section.fourth .foot h3 ,section.fourth .foot a{
@@ -398,4 +442,82 @@ section.fourth .foot h3{
 section.fourth .foot a{
   float: right;
   border: 1px solid white;
+}
+
+/* Fifth section */
+section.fifth .conteiner ul h3{
+  padding-bottom:4vh ;
+  font-size: 1.8vw;
+  border-bottom:2px solid lightgrey;
+}
+section.fifth .conteiner ul {
+  list-style: none;
+}
+section.fifth .conteiner ul li{
+  padding: 4vh 0vh;
+  font-size: 1.2vw;
+  border-bottom:2px solid lightgrey;
+}
+section.fifth .conteiner ul li span,.answers{
+  width: 80%;
+  float:left;
+}
+section.fifth .conteiner ul li i{
+  width: 20px;
+  font-size: 16px;
+  float: right;
+  padding-right: 20px;
+  
+}
+.answers{
+  padding-top:20px;
+  color: #9e9e9e;
+  font-family: Arial, Helvetica, sans-serif;
+  display: none;
+
+}
+section.fifth .conteiner ul li:hover .answers{
+  display: block;
+}
+
+/* FOOTER */
+footer{
+  background-color: black;
+  height: 100vh;
+}
+footer .frame{
+  width: 80%;
+  margin: auto;
+}
+footer .frame ul{
+  display: inline-block;
+  list-style: none;
+  margin: 6vw 7vw 6vw 0;
+}
+footer .frame ul h5{
+  display: inline-block;
+  color: white;
+  margin-bottom: 20px;
+}
+footer .frame ul li{
+  color: white;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+}
+footer .language{
+  display:inline-block;
+  width: 100px;
+  padding-top: 40px;
+  border-top:1px solid grey ;
+}
+footer .language i{
+  font-size: 12px;
+  color: lightgrey;
+}
+footer .language a{
+  font-size: 10px;
+  color: grey;
+  text-decoration:none;
+
 }
