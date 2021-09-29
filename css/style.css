@@ -252,8 +252,10 @@ main section.first p span{
   width: 90%;
 }
 .payment .body-frame .buy-now{
-  height:80px;
   line-height: 80px;
+}
+.payment .body-frame h5{
+  padding-top: 40px;
 }
 /*  line under "OPPURE" */
 .payment .body-frame .buy-now span{
@@ -333,6 +335,9 @@ section.third .item h4{
 
 /* Fourth section TOP*/
 
+section.fourth{
+  width: 100vw;
+}
 section.fourth .top h3{
   margin-bottom: 40px;
   width: 60%;
@@ -351,23 +356,24 @@ section.fourth .main .center{
 }
 /*dimensions aside, center,square*/
 section.fourth .main .aside{
-  width:30%;
+  width:30vw;
 }
 section.fourth .main .center{
-  width: 40%;
+  width: 40vw;
 }
 section.fourth .main .square{
   display:inline-block;
-  width: 50%;
+  width: 15vw;
+  height: 15vw;
   text-align: center;
-  line-height: 200px;
+  line-height: 15vw;
 }
 section.fourth .main .aside img{
   filter: invert(1);
 }
 section.fourth .main img{
   vertical-align: middle;
-  width: 40%;
+  width: 8vw;
 }
 
 /* backgroun color square */
@@ -404,7 +410,7 @@ section.fourth .main .right .square-conteiner-below .square:last-child{
 /* frame square in first small square */
  .square-conteiner-above  .frame-square{
   width: 100%;
-  height: 200px;
+  height: 15vw;
   border: 10px solid #d1e9cd;
   position: absolute;
   left: 0%;
@@ -413,7 +419,7 @@ section.fourth .main .right .square-conteiner-below .square:last-child{
 
 /*center main  */
 section.fourth .main .center{
-  padding: 80px;
+  padding: 40px 40px 0px 40px;
 }
 
 section.fourth .main .center p{
